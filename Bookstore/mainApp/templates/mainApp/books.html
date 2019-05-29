@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Books</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<style type="text/css">
+header{
+    width: 100%;
+    height: 40vh;
+    background-image: url("http://www.ebookstore.com.pk/wp-content/uploads/2015/05/cropped-online_books_store_shop_pakistan_background1.jpg");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.title{
+    width: 150px;
+    height: 800px;
+    text-align: center;
+    background-color: white;
+    color: black;
+    border-style: solid;
+
+
+}
+header h1 {
+
+    font-size: 40px;
+    font-family: "Yu Gothic Medium";
+    text-align:center;
+
+}
+li{
+    position: relative;
+}
+li span{
+    position: absolute;
+    top: 7px;
+    right: 8px;
+    background-image: url("../img/angle-arrow-down.png");
+    height: 10px;
+    width: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.vypadMenu{
+    width: 60px;
+    height: 0;
+    position: absolute;
+    top:30px;
+    left: 0;
+    background: pink;
+    transition: 2s;
+    overflow: hidden;
+}
+
+li{
+    position: relative;
+}
+
+.dlyaVyp{
+    position: relative;
+
+}
+.vypMenu{
+    width:70px;
+    height: 0;
+    position: absolute;
+    top: 0px;
+    left: 30px;
+    background: gainsboro;
+    transition: 2s;
+
+}
+
+ul li a{
+    text-decoration: none;
+    color: black;
+    margin-right: 25px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+button{
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.menu{
+    width: 60%;
+    height: 30px;
+    background-color: white;
+    font-family: "Yu Gothic Medium";
+    border-style: solid;
+    border-radius: 10%;
+    margin-top:100px;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+li{
+    color: black;
+    display: inline-block;
+    font-weight: bold;
+}
+.arrow{
+    width: 10px;
+    height: 10px;
+    margin-right: 20px;
+}
+
+
+#section1{
+    width: 100%;
+    height: 100vh;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.s1{
+    width: 49%;
+    height: 100%;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+.suret{
+    width: 90%;
+    height: 60%;
+}
+
+article{
+    width: 90%;
+
+
+}
+
+#section2{
+    width: 100%;
+    height: 70vh;
+    background-color: white;
+    margin-top: 0px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+#footerg{
+    width: 100%;
+    height: 50vh;
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.books{
+    width: 20%;
+    height: 300px;
+    display: inline-block;
+    margin-right: 25px;
+    margin-top: 0px;
+    background-color: white;
+padding-top:0px;
+
+}
+.books:hover .ops {
+    transform: translateY(0);
+    opacity: 1;
+    z-index: 1;
+    transition: 2s;
+
+}
+.ops{
+    transform: translateY(-100%);
+    transition: 2s;
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 25%;
+    width: 50%;
+    height: 60%;
+    background: mistyrose;
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+    z-index: -1;
+}
+
+.opisanie{
+    width: 90%;
+    height: 100%;
+    font-family: Verdana;
+    font-weight: bold;
+    padding: 25px 15px;
+
+}
+.bookImg{
+    width: 100%;
+    height: 100%;
+}
+
+
+.footer1{
+    width: 20% ;
+    height: 100%;
+    text-align: center;
+    font-family: "Yu Gothic Medium";
+    font-size: large;
+}
+.footer2{
+
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+
+.footer3{
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    font-family: "Yu Gothic Medium";
+    font-size: large;
+}
+input{
+    margin: 20px;
+    width: 300px;
+    height: 50px ;
+    border-radius: 40%;
+    border-style: ridge;
+    border: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+
+</style>
+
+<body>
+    <header>
+    <div class="title">
+        <h1>Books Store</h1>
+    </div>
+    <div class="menu">
+        <ul>
+
+                <li>
+                    <a href="">Главная страница</a>
+
+                    <div class="vypadMenu">
+
+                       
+
+                    </div>
+                </li>
+
+
+           <li class="dlyaVyp"> <a href="reg/">Регистрация</a>
+                <div class="vypadMenu">
+                   
+
+                </div>
+           </li>
+            <li><a href="signin/">Вход</a></li>
+            <li><a href="bobo/">Книги</a></li>
+        </ul>
+    </div>
+</header>
+
+    <div id="section2">
+        <div class="books">
+            <img class="bookImg" src = "https://images-na.ssl-images-amazon.com/images/I/410cBgt%2B6PL._SX323_BO1,204,203,200_.jpg">
+            <div class="ops">
+
+                <article class="opisanie">
+                    Sir Alex Ferguson's compelling story is always honest and revealing he reflects on his managerial career that embraced unprecedented European success for Aberdeen and 26 triumphant seasons with Manchester United. Sir Alex Ferguson's best-selling autobiography has now been updated to offer reflections on events at Manchester United since his retirement as well as his teachings at the Harvard Business School, a night at the Oscars and a boat tour round the Hebrides, where he passed unrecognised. The extra material adds fresh insights and detail on his final years as United's manager. Both the psychology of management and the detail of football strategy at the top level can be complex matters but no-one has explained them in a more interesting and accessible way for the general reader than Sir Alex does here. MY AUTOBIOGRAPHY is revealing, endlessly entertaining and above all inspirational.
+
+                </article>
+
+            </div>
+        <button type="submit">Buy</button>
+        </div>
+
+        <div class="books">
+            <img src="https://book-cover.ru/sites/default/files/field/image/ficdjerald-velikiy-getsby-bolgariya.jpg">
+            <div class="ops">
+
+                <article class="opisanie">
+                   «Великий Гэтсби» – самый известный роман Фрэнсиса Фицджеральда, ставший символом «века джаза». Америка, 1925 г., время «сухого закона» и гангстерских разборок, ярких огней и яркой жизни. Но для Джея Гэтсби воплощение американской мечты обернулось настоящей трагедией. А путь наверх, несмотря на славу и богатство, привел к тотальному крушению. Ведь каждый из нас в первую очередь стремится не материальным благам, а к любви, истинной и вечной…
+                </article>
+            </div>
+        <button type="submit">Buy</button>
+        </div>
+
+        <div class="books">
+            <img src="https://upload.wikimedia.org/wikipedia/ru/1/10/%D0%9E%D0%B1%D0%BB%D0%BE%D0%B6%D0%BA%D0%B0_%D0%BA%D0%BD%D0%B8%D0%B3%D0%B8_%22%D0%9D%D0%B0%D0%B2%D0%B0%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F%22%2C_%D0%9C%D0%B0%D0%BA%D1%81_%D0%A4%D1%80%D0%B0%D0%B9.jpg">
+            <div class="ops">
+                <article class="opisanie">Новые приключения ироничного и бесстрашного детектива Макса в параллельных мирах. В повести «Зеленые воды Ишмы» вместе с коллегами из Тайного Сыска Макс расследует одно странное происшествие, потрясшее жителей Ехо, и успешно справляется с заданием, пуская в ход свой знаменитый Смертный шар, Мантию Смерти и… изрядную долю здорового земного юмора. Во второй повести Макс с приятелем отправляется в рискованное путешествие в Мир Бликов. Только благодаря мужеству и находчивости друзьям удается вырваться из города-призрака.    
+                </article>
+            </div>
+    <button type="submit">Buy</button>
+        </div>
+
+        <div class="books">
+            <img src="http://antiutopya.ru/wp-content/uploads/2014/12/Screens10551.png">
+            <div class="ops">
+                <article class="opisanie">
+Своеобразный антипод второй великой антиутопии XX века — "О дивный новый мир" Олдоса Хаксли. Что, в сущности, страшнее: доведенное до абсурда "общество потребления" — или доведенное до абсолюта "общество идеи"? По Оруэллу, нет и не может быть ничего ужаснее тотальной несвободы...
+
+                </article>
+
+
+            </div>
+    <button type="submit">Buy</button>
+        </div>
+
+        <div class="books">
+            <img src="https://book-cover.ru/sites/default/files/field/image/remark-triumfalnaja-arka.jpg">
+            <div class="ops">
+                <article class="opisanie">
+                   Это - красивейший из европейских романов XX века. Роман о любви, войне и смерти. Это - печальнейший из европейских романов XX века. Роман о женщине, у которой нет ничего, кроме жалких сиюсекундных побед, - и о мужчине, привыкшем к страху, ненависти и безнадежности, как к своему второму "я". Это - "Триумфальная арка". Роман о страсти, что может и должна завершиться лишь трагедией.
+                </article>
+            </div>
+    <button type="submit">Buy</button>
+        </div>
+
+        <div class="books">
+            <img src="https://ozon-st.cdn.ngenix.net/multimedia/1013135735.jpg">
+            <div class="ops">
+
+                <article class="opisanie">
+                    Двадцать лет спустя Третьей мировой войны последние выжившие люди прячутся на станциях и в туннелях московского метро, самого большого на Земле противоатомного бомбоубежища. Поверхность планеты заражена и непригодна для обитания, и станции метро становятся последним пристанищем для человека. Они превращаются в независимые города-государства, которые соперничают и воюют друг с другом. Они не готовы примириться даже перед лицом новой страшной опасности, которая угрожает всем людям окончательным истреблением. Артем, двадцатилетний парень со станции ВДНХ, должен пройти через все метро, чтобы спасти свой единственный дом - и все человечество. "Метро 2033" - культовый роман-антиутопия, один из главных российских бестселлеров нулевых. Переведен на 37 иностранных языков, заинтересовал Голливуд, превращен в атмосферные компьютерные блокбастеры, породил целую книжную вселенную и настоящую молодежную субкультуру во всем мире.
+                </article>
+
+            </div>
+    <button type="submit">Buy</button>        
+    </div>
+
+
+
+
+    </div>
+    <div id="section2">
+        <div class="books">
+            <img class="bookImg" src="https://img2.labirint.ru/books/411030/big.jpg">
+            <div class="ops">
+
+                <article class="opisanie">
+                    "Государь" - самая значительная и неоднозначная работа флорентийского государственного деятеля эпохи Возрождения Никколо Макиавелли. Долгие годы эта книга ассоциировалась с политикой яда и кинжала. После выхода в свет "Государя" появился термин "макиавеллизм", обозначающий цинизм, вседозволенность, двуличие в политике. Однако сегодня многие положения автора воспринимаются не столь однозначно, найдя свое воплощение в истории ХХ века. Помимо "Государя" в данном издании публикуется другая знаменитая работа Макиавелли "Рассуждения о первой декаде Тита Ливия", дополняющая и проясняющая многие моменты основного труда автора. Оба текста представлены в наиболее современном на сегодняшний день переводе и снабжены примечаниями.
+
+                </article>
+
+            </div>
+        <button type="submit">FREE DOWNLOAD</button>
+        </div>
+
+        <div class="books">
+            <img src="https://i2.mybook.io/c/256x426/book_covers/ed/0f/ed0f5f86-9141-4a3f-bcd7-127e20777432.jpe">
+            <div class="ops">
+
+                <article class="opisanie">
+                   "Человек, который смеется" - один из наиболее известных романов Виктора Гюго. В центре повествования Гуинплен, в раннем детстве похищенный бандитами, до неузнаваемости обезобразившими его лицо. Судьба преподнесла ему немало испытаний, но душу не искалечила - преодолев нелегкий путь от ярмарочного актера до лорда и члена парламента, он смог остаться честным и благородным человеком.
+                </article>
+            </div>
+        <button type="submit">FREE DOWNLOAD</button>
+        </div>
+
+        <div class="books">
+            <img src="http://irecommend.ru/sites/default/files/product-images/1/1001155927.jpg">
+            <div class="ops">
+                 <article class="opisanie">
+Сорок лет назад это считалось фантастикой. Сорок лет назад это читалось как фантастика. Исследующая и расширяющая границы жанра, жадно впитывающая всевозможные новейшие веяния, примеряющая общечеловеческое лицо, отважно игнорирующая каинову печать "жанрового гетто". Сейчас это воспринимается как одно из самых человечных произведений новейшего времени, как роман пронзительной психологической силы, как филигранное развитие темы любви и ответственности. Не зря вышедшую уже в 1990-е книгу воспоминаний Киз назвал "Элджернон, Чарли и я".   В нашей библиотеке вы можете бесплатно почитать книгу « Цветы для Элджернона ». Чтобы читать онлайн книгу « Цветы для Элджернона » перейдите по указанной ссылке. Приятного Вам чтения.
+
+                </article>
+            </div>
+    <button type="submit">FREE DOWNLOAD</button>
+        </div>
+
+        <div class="books">
+            <img src="http://ic.pics.livejournal.com/shvetsovmn/40912476/40907/40907_300.jpg">
+            <div class="ops">
+               
+        <article class="opisanie">Джек Лондон - английский писатель, мастерски владеющий словом, он создал огромное количество популярных и по сей день романов, повестей и коротких рассказов. В эту книгу вошла повесть "Белый Клык", о волчонке-собаке, которому суждено стать сильным, пережив нелегкие жизненные испытания. 
+                </article>
+
+            </div>
+    <button type="button" value="Download Picture" onclick="javascript:window.location.href='http://thelib.ru/books/london_dzhek/beliy_klik-txt.zip'">FREE DOWNLOAD</button>
+        </div>
+
+        <div class="books">
+            <img src="https://cdn.ast.ru/v2/ASE000000000708196/COVER/cover1.jpg">
+            <div class="ops">
+                <article class="opisanie">
+                   Фрэнк Герберт (1920-1986) успел написать много, но в истории остался прежде всего как автор эпопеи "Дюна". Возможно, самой прославленной фантастической саги двадцатого столетия, саги, переведенной на десятки языков и завоевавшей по всему миру миллионы поклонников. Самый авторитетный журнал научной фантастики "Локус" признал "Дюну", первый роман эпопеи о песчаной планете, лучшим научно-фантастическим романом всех времен и народов. В "Дюне" Фрэнку Герберту удалось совершить невозможное - создать своеобразную "хронику далекого будущего". И не было за всю историю мировой фантастики картины грядущего более яркой, более зримой, более мощной и оригинальной.
+                </article>
+            </div>
+    <button type="submit">FREE DOWNLOAD</button>
+        </div>
+
+        <div class="books">
+            <img src="https://j.livelib.ru/boocover/1000023292/200/dce0/Ajzek_Azimov__Osnovanie.jpg">
+            <div class="ops">
+
+                <article class="opisanie">
+                   Действие первой части трилогии `Основание` разворачивается в далеком будущем, когда заселены планеты миллионов звездных систем Галактики. Математик и психоисторик Хэри Сэлдон предсказывает крах и возрождение через много лет несокрушимой Галактической Империи. Чтобы смягчить последствия катастрофы он разрабатывает проект создания Основания, которое должно стать центром зарождения новой Империи.
+                </article>
+
+            </div>
+    <button type="submit">FREE DOWNLOAD</button>        
+    </div>
+
+
+    </div>
+
+   
+</body>
+</html>

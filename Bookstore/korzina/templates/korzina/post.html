@@ -1,0 +1,7 @@
+{% extends "mainApp/wrapper.html" %}
+
+{% block content %}
+	{% for post in object_list %}
+		<a href="korzina/{{post.id}}"> <h3>{{post.name}}</h3> <br> <h4>{{post.author}}</h4> </a><article>{{post.about}}</article> 
+	{% endfor %}
+{% endblock %}
